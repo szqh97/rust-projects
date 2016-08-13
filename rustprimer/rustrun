@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rsfile=$1
+exefile=$(echo $rsfile | awk -F'.' '{print $1}')
+rustc $rsfile && ./$exefile 
+rm -rf $exefile
