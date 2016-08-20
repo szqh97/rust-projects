@@ -1,3 +1,4 @@
+#[warn(unused_variables)]
 fn main() {
     let v0: Vec<i32> = Vec::new();
     let v1: Vec<i32> = vec![];
@@ -7,4 +8,8 @@ fn main() {
 
     let hello = "hello world";
     let h2: &'static str = "Hello again";
+
+    println!("{:?}, {:?}", hello, h2);
+    let v: Vec<_> = (1..5).collect();
+    println!("{:?}", v.get(10));
 }
