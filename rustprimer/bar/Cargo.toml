@@ -1,0 +1,6 @@
+[package]
+name = "bar"
+version = "0.1.0"
+authors = ["li_yun <liyun@idongjia.cn>"]
+
+[dependencies]
